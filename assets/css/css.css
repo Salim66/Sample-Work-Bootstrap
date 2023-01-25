@@ -1,0 +1,105 @@
+:root {
+
+    --ass-color: #9a9da0;
+    --dark-color: #343a40;
+    --deep-dark-color: #212529;
+    --info-color: #0376ee;
+    --warning-color: #ffc107;
+}
+
+
+.bg-dark-color {
+    background: var(--dark-color);
+}
+
+.bg-deep-dark {
+    background: var(--deep-dark-color);
+}
+
+.text-ass {
+    color: var(--ass-color) !important;
+}
+
+
+
+.notify-mail {
+    position: relative;
+}
+
+.notify-mail span {
+    position: absolute;
+    top: 2px;
+    right: 23px;
+    width: 7px;
+    height: 7px;
+    background-color: var(--info-color);
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.btn-search {
+    border-radius: 0 3px 3px 0 !important;
+}
+
+.notify-bell {
+    position: relative;
+}
+
+.notify-bell span {
+    position: absolute;
+    top: 2px;
+    right: 23px;
+    width: 7px;
+    height: 7px;
+    background-color: var(--warning-color);
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logout-btn-wrap a {
+    text-decoration: none;
+    color: var(--ass-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logout-btn-wrap a:hover {
+    color: var(--info-color);
+}
+
+.admin-tab {
+    box-sizing: border-box;
+    height: 100vh;
+
+}
+
+.tab-item-wrap {
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+
+
+}
+
+.tab-top {
+    height: 80vh;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.tab-bottom {
+    height: 20vh;
+    width: 100%;
+}
+
+.font-size-custom {
+    font-size: 18px;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
