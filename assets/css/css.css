@@ -80,19 +80,21 @@
     position: fixed;
     top: 60px;
     left: 0;
-
-
+    width: 16.5%;
 }
 
 .tab-top {
-    height: 80vh;
+    height: 83vh;
     padding-left: 30px;
     width: 100%;
 }
 
 .tab-bottom {
-    height: 20vh;
+    height: 17vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
 }
 
 .font-size-custom {
@@ -102,4 +104,38 @@
     align-items: center;
     gap: 10px;
 
+}
+
+.section-wrapper {
+    width: 100%;
+    padding: 20px 5px;
+}
+
+.history {
+    position: relative;
+}
+
+.history-card-bottom {
+    text-decoration: none;
+    color: white;
+}
+
+.history-card-bottom:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.history-card-bottom:first-child {
+    font-size: 14px;
+}
+
+.card .history-icon {
+    position: absolute;
+    top: -5px;
+    right: -18px;
+}
+
+.card .history-icon i {
+    font-size: 80px !important;
+    transform: rotate(21deg);
 }

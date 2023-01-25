@@ -74,6 +74,7 @@
 
     <div class="container-fluid">
       <div class="row">
+        <!-- Left Sidebar Start -->
         <div class="col-md-2 bg-dark-color admin-tab">
           <div class="tab-item-wrap">
             <div class="tab-top py-3">
@@ -101,22 +102,133 @@
               </ul>
             </div>
             <div class="tab-bottom bg-deep-dark">
-              Lorem ipsum dolor sit amet consectetur 
+              <span><i class="fa fa-angle-left text-ass" aria-hidden="true"></i></span>
             </div>
           </div>
         </div>
+        <!-- Left Sidebar End -->
+        <!-- Main Contain Start -->
         <div class="col-md-10">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            soluta laudantium incidunt, amet ipsam modi aperiam quibusdam,
-            officiis ut cumque voluptates debitis saepe iusto quia 
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            soluta laudantium incidunt, amet ipsam modi aperiam quibusdam,
-            officiis ut cumque voluptates debitis saepe iusto quia 
-          </p>
+          <div class="section-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">My Dashboard</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card bg-primary text-white history">
+                        <div class="card-body">
+                            <div class="history-card-top">
+                                <span>500 Vistors</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="history-card-bottom d-flex justify-content-between">
+                                <span>View Details</span>
+                                <span> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                        <span class="history-icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-warning text-white history">
+                        <div class="card-body">
+                            <div class="history-card-top">
+                                <span>2000 Revenue</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="history-card-bottom d-flex justify-content-between">
+                                <span>View Details</span>
+                                <span> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                        <span class="history-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-success text-white history">
+                        <div class="card-body">
+                            <div class="history-card-top">
+                                <span>123 New Orders!</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="history-card-bottom d-flex justify-content-between">
+                                <span>View Details</span>
+                                <span> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                        <span class="history-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-danger text-white history">
+                        <div class="card-body">
+                            <div class="history-card-top">
+                                <span>13 New Tickets!</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="history-card-bottom d-flex justify-content-between">
+                                <span>View Details</span>
+                                <span> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                        <span class="history-icon"><i class="fa fa-stop-circle-o" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 pt-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="chart-header">
+                                <span><i class="fa fa-area-chart" aria-hidden="true"></i></span>
+                                <span>Sales Chart</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+              
+                            <!-- Area Chart -->
+                            <div id="areaChart" style="min-height: 400px;" class="echart"></div>
+              
+                            <script>
+                              document.addEventListener("DOMContentLoaded", () => {
+                                echarts.init(document.querySelector("#areaChart")).setOption({
+                                  xAxis: {
+                                    type: 'category',
+                                    boundaryGap: false,
+                                    data: ['Mar-1', 'Mar-2', 'Mar-3', 'Mar-4', 'Mar-5', 'Mar-6', 'Mar-7', 'Mar-8', 'Mar-9', 'Mar-10', 'Mar-11', 'Mar-12', 'Mar-13']
+                                  },
+                                  yAxis: {
+                                    type: 'value'
+                                  },
+                                  series: [{
+                                    data: [10000, 20000, 30000, 40000],
+                                    type: 'line',
+                                    smooth: true,
+                                    areaStyle: {}
+                                  }]
+                                });
+                              });
+                            </script>
+                            <!-- End Area Chart -->
+              
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
+        <!-- Main Contain End -->
       </div>
     </div>
     <!-- ADmin Panel end -->
@@ -136,5 +248,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/echart.js"></script>
   </body>
 </html>
